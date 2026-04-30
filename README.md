@@ -78,12 +78,6 @@ run(baseline_prompt="your prompt here")   # uses a custom baseline
 | `prompts.py` | The three system prompts: `BASELINE_PROMPT`, `META_PROMPT` (variant generation), `EVAL_PROMPT` (weakness identification). |
 | `requirements.txt` | Pinned deps: `openai`, `galileo`, `python-dotenv`. Streamlit installed separately. |
 
-## Why This Task
-
-The metric recommender is a real internal use case. New FDEs and customers often don't know whether they need `context_adherence` vs `correctness`, or when `tool_selection_quality` applies. A well-optimized recommender prompt could be a lightweight internal tool.
-
-The recursive angle — using Galileo to evaluate and improve a Galileo-facing prompt — is intentional. It shows the platform is useful for your own internal tooling, not just customer apps.
-
 ## Galileo Platform Coverage
 
 - **Datasets** — `create_dataset()` registers a 10-row eval set on startup.
